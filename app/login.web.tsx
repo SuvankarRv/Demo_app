@@ -515,7 +515,7 @@ export default function WebLogin() {
           <div className="divider"></div>
 
           <div className="create-account">
-            Don't have an account?<a href="#" onClick={handleCreateAccount}>Create Account</a>
+            Don&apos;t have an account?<a href="#" onClick={handleCreateAccount}>Create Account</a>
           </div>
 
           <div style={{

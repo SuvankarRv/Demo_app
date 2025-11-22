@@ -10,7 +10,8 @@
     "ios": "expo start --ios",
     "web": "expo start --web",
     "lint": "expo lint",
-    "predeploy": "npx expo export --platform web --output-dir web-build --public-url /Demo_app/",
+    "predeploy": "npx expo export --platform web --output-dir web-build",
+    "postpredeploy": "node scripts/fix-basepath.js",
     "deploy": "gh-pages -d web-build",
     "deploy:github": "npm run predeploy && npm run deploy"
   },

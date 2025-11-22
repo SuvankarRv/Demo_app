@@ -25,7 +25,7 @@ export default function AdminScreen() {
                         <Text className="text-6xl mb-4 text-center">🚫</Text>
                         <Text className="text-xl font-bold text-red-700 mb-2 text-center">Access Denied</Text>
                         <Text className="text-gray-600 text-center">
-                            You don't have permission to access the admin panel.
+                            You don&apos;t have permission to access the admin panel.
                         </Text>
                     </View>
                 </View>
@@ -161,8 +161,8 @@ export default function AdminScreen() {
                                         <TouchableOpacity
                                             key={role}
                                             className={`flex-1 p-3 rounded-xl border-2 ${newRole === role
-                                                    ? 'bg-purple-50 border-purple-600'
-                                                    : 'bg-gray-50 border-gray-200'
+                                                ? 'bg-purple-50 border-purple-600'
+                                                : 'bg-gray-50 border-gray-200'
                                                 }`}
                                             onPress={() => setNewRole(role)}
                                         >
