@@ -40,9 +40,8 @@
         }
       ]
     ],
-    "experiments": {
-      "typedRoutes": true,
-      "reactCompiler": true
-    }
+    "router": {
+      "basePath": "/Demo_app"
+    },
   }
 }
