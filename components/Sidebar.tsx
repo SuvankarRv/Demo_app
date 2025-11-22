@@ -3,7 +3,7 @@ import { useState, useRef, useEffect } from 'react';
 import { IconSymbol } from '@/components/ui/icon-symbol';
 import { useRouter, usePathname } from 'expo-router';
 import { useAuth } from '@/context/AuthContext';
-import { useUserManagement } from '@/context/UserManagement Context';
+import { useUserManagement } from '@/context/UserManagementContext';
 
 type NavItem = {
     name: string;
@@ -171,8 +171,8 @@ function RenderSidebarContent({ isCollapsed, navItems, isActive, handleNavigate,
                             key={item.path}
                             onPress={() => handleNavigate(item.path)}
                             className={`flex-row items-center gap-3 p-3 rounded-xl mb-2 transition-all ${active
-                                    ? 'bg-gradient-to-r from-purple-600 to-blue-600 shadow-lg shadow-purple-500/50'
-                                    : 'hover:bg-white/5'
+                                ? 'bg-gradient-to-r from-purple-600 to-blue-600 shadow-lg shadow-purple-500/50'
+                                : 'hover:bg-white/5'
                                 }`}
                             style={{ marginTop: index === 0 ? 0 : 4 }}
                         >
